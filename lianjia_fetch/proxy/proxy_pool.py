@@ -43,7 +43,6 @@ class GatherProxy(object):
             if False == self.testproxy(proxy):
                 self.proxies.remove(proxy)
 
-
     def testproxy(self, proxy):
         proxies = {'http': proxy, 'https': proxy}
         try:
