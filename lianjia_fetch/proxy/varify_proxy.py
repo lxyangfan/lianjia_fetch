@@ -12,10 +12,10 @@ headers = {
 }
 
 
-def save_csv(file_name, set_var, mode='a'):
+def save_csv(file_name, list_var, mode='a'):
     with open(file_name, mode) as f:
         writer = csv.writer(f, delimiter='\n')
-        writer.writerow(list(set_var))
+        writer.writerow(list_var)
 
 
 def test_csv():
@@ -29,7 +29,17 @@ def test_read_csv():
     with open('dt.csv', 'rb') as f:
         reader = csv.reader(f)
         for row in reader:
-            print row
+            print row[0]
+
+
+def read_csv_to_queue(csv_file, proxy_queue):
+    if csv_file is None:
+        csv_file = 'dt.csv'
+    with open(csv_file, 'rb') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if len(row) >= 1:
+                proxy_queue.put(row[0])
 
 
 class Consumer(MP.Process):
@@ -47,12 +57,11 @@ class Consumer(MP.Process):
                 print '%s: Exiting' % proc_name
                 self.task_queue.task_done()
                 break
-            print '%s: %s' % (proc_name, next_task)
+            #print '%s: %s' % (proc_name, next_task)
             answer = next_task()
             self.task_queue.task_done()
             self.result_queue.put(answer)
         return
-
 
 
 def run_tasks(tasks_queue, results_queue):
@@ -77,7 +86,7 @@ def main():
     results = MP.Queue()
 
     # Enqueue jobs
-    num_jobs = 5
+    num_jobs = 2
     for i in xrange(num_jobs):
         url = 'http://www.xicidaili.com/nn/{0}'.format(i)
         tasks.put(CrawTask(url))
@@ -93,5 +102,32 @@ def main():
         num_jobs -= 1
 
 
+def varify_proxies(read_file='dt.csv', save_file='useful.csv'):
+    # Establish communication queues
+    tasks = MP.JoinableQueue()
+    results = MP.Queue()
+    proxy_queue = MP.Queue()
+
+    read_csv_to_queue(read_file, proxy_queue)
+
+    num_jobs = 0
+    max_num_jobs = 500
+    while not proxy_queue.empty() and num_jobs <= max_num_jobs:
+        proxy = proxy_queue.get()
+        tasks.put(VarifyProxyTask(proxy, timeout=1))
+        num_jobs += 1
+
+    run_tasks(tasks, results)
+
+    final_proxy = []
+    while num_jobs:
+        result = results.get()
+        if result is not None:
+            final_proxy.append(result)
+        num_jobs -= 1
+    # save the useful
+    save_csv(save_file, final_proxy, mode='wb')
+
+
 if __name__ == '__main__':
-    main()
+    varify_proxies('useful.csv', 'good.csv')
