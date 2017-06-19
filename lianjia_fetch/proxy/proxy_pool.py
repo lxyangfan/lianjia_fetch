@@ -17,7 +17,7 @@ headers = {
 
 
 class GatherProxy(object):
-    '''To get proxy from http://www.xicidaili.com/nn/'''
+    """To get proxy from http://www.xicidaili.com/nn/"""
     url = 'http://www.xicidaili.com/nn/'
     proxies = set()
 
@@ -58,7 +58,7 @@ class GatherProxy(object):
 
 
 class ProxyPool(object):
-    '''A proxypool class to obtain proxy'''
+    """A proxypool class to obtain proxy"""
 
     gatherproxy = GatherProxy()
 
@@ -66,16 +66,16 @@ class ProxyPool(object):
         self.pool = set()
 
     def updateGatherProxy(self, pages=1):
-        '''Use GatherProxy to update proxy pool'''
+        """Use GatherProxy to update proxy pool"""
         self.pool.update(self.gatherproxy.getelite(pages=pages))
 
     def removeproxy(self, proxy):
-        '''Remove a proxy from pool'''
+        """Remove a proxy from pool"""
         if (proxy in self.pool):
             self.pool.remove(proxy)
 
     def randomchoose(self, pages=1):
-        '''Random Get a proxy from pool'''
+        """Random Get a proxy from pool"""
         if (self.pool):
             return random.sample(self.pool, 1)[0] # it's a one item list
         else:
@@ -83,14 +83,14 @@ class ProxyPool(object):
             return random.sample(self.pool, 1)[0] # it's a one item list
 
     def getproxy(self, pages=1):
-        '''Get a dict format proxy randomly'''
+        """Get a dict format proxy randomly"""
         proxy = self.randomchoose(pages)
         proxies = {'http': proxy, 'https': proxy}
         # r=requests.get('http://icanhazip.com',proxies=proxies,timeout=1)
         try:
             print 'testing proxy....'
-            r = requests.get('http://dx.doi.org', proxies=proxies, timeout=0.5)
-            if (r.status_code == 200):
+            r = requests.get('http://icanhazip.com/', proxies=proxies, timeout=0.5)
+            if r.status_code == 200:
                 print 'Got one!'
                 return proxies
             else:
