@@ -13,7 +13,6 @@ headers = {
 }
 
 
-
 class BaseTask(object):
     def __init__(self):
         pass
@@ -26,7 +25,7 @@ class BaseTask(object):
 
 
 class VarifyProxyTask(object):
-    ''' Varify proxy task '''
+    """ Varify proxy task """
 
     def __init__(self, url, timeout=0.5):
         self.url = url

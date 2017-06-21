@@ -1,7 +1,6 @@
 # ! -*- encoding:utf8 -*-
 import multiprocessing as MP
 from multiprocessing import Manager, Queue, Value, Lock
-from proxy_pool import GatherProxy
 import time
 
 
@@ -14,7 +13,6 @@ def task(url, v):
 def apply_pool_test():
     url = 'http://sh.lianjia.com/d'
     useful_proxy_num = Value('i', 0)
-
 
     pool_size = MP.cpu_count() * 2
     print 'Pool count', pool_size

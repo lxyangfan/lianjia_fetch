@@ -12,6 +12,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
 
+
 def save_csv(file_name, set_var, mode='a'):
     with open(file_name, mode) as f:
         writer = csv.writer(f, delimiter='\n')
