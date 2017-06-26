@@ -1,6 +1,5 @@
 #! -*- encoding:utf-8 -*-
-import re, requests, random
-
+import  requests
 
 
 class IProxyCrawler(object):
