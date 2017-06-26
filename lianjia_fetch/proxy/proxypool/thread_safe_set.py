@@ -1,6 +1,7 @@
 #! -*- encoding:utf-8 -*-
 from multiprocessing import Lock
 
+
 def locked_method(method):
     """Method decorator. Requires a lock object at self._lock"""
     def newmethod(self, *args, **kwargs):
@@ -15,7 +16,7 @@ class LockedSet(set):
         super(LockedSet, self).__init__(*args, **kwargs)
 
     @locked_method
-    def add(self,elem,  *args, **kwargs):
+    def add(self, elem,  *args, **kwargs):
         return super(LockedSet, self).add(elem)
 
     @locked_method
@@ -25,3 +26,7 @@ class LockedSet(set):
     @locked_method
     def __contains__(self, key):
         return super(LockedSet, self).__contains__(key)
+
+    @locked_method
+    def pop(self):
+        return super(LockedSet, self).pop()

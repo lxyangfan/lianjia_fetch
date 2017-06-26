@@ -1,5 +1,5 @@
 #! -*- encoding:utf-8 -*-
-import  requests
+import requests
 
 
 class IProxyCrawler(object):
@@ -11,10 +11,18 @@ class IProxyCrawler(object):
         self.url = url
         self.headers = headers
         self.proxies = set()
+        self.crawl_proxies = None
 
-    def fetch_content(self):
-        xx = requests.get(self.url, headers=self.headers)
-        return xx.text
+    def fetch_content(self, proxies=None):
+        if proxies is None:
+            xx = requests.get(self.url, headers=self.headers)
+            return xx.text
+        else:
+            xx = requests.get(self.url, proxies=proxies, headers=self.headers)
+            if xx.status_code == 200:
+                return xx.text
+            else:
+                raise RuntimeError("无效的代理")
 
     def crawl(self):
         """
@@ -29,6 +37,9 @@ class IProxyCrawler(object):
         :return:
         """
         raise NotImplementedError("Should have implemented this")
+
+    def set_crawl_proxies(self, proxies):
+        self.crawl_proxies = proxies
 
     def test(self):
         raise NotImplementedError("Should have implemented this")

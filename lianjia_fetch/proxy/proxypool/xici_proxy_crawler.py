@@ -1,18 +1,14 @@
 #! -*- encoding:utf-8 -*-
 import re
 import logging
+from logging.config import fileConfig
 from bs4 import BeautifulSoup as Bs
 from proxy_crawler import IProxyCrawler
 from thread_safe_set import LockedSet
 from multiprocessing import Lock
 
-logger2 = logging.getLogger()
-handler = logging.StreamHandler()
-formatter = logging.Formatter(
-    '%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
-handler.setFormatter(formatter)
-logger2.addHandler(handler)
-logger2.setLevel(logging.DEBUG)
+fileConfig("log-conf.ini")
+logger = logging.getLogger("debugLog")
 
 class XiciProxyCrawler(IProxyCrawler):
     """
@@ -21,10 +17,11 @@ class XiciProxyCrawler(IProxyCrawler):
     visit_pages = LockedSet()
     base_url = "http://www.xicidaili.com/nn/"
 
-    def __init__(self, headers):
+    def __init__(self, headers, proxies=None):
         super(XiciProxyCrawler, self).__init__(url=XiciProxyCrawler.base_url+'1', headers=headers)
         self.next_page = 1
         self.lock = Lock()
+        self.crawl_proxies = proxies
 
     def has_visit(self):
         return self.url in XiciProxyCrawler.visit_pages
@@ -33,14 +30,23 @@ class XiciProxyCrawler(IProxyCrawler):
         if not self.url in XiciProxyCrawler.visit_pages:
             # 添加本URL到集合
             XiciProxyCrawler.visit_pages.add(self.url)
-            return super(XiciProxyCrawler, self).fetch_content()
+            text = None
+            try:
+                text = super(XiciProxyCrawler, self).fetch_content(self.crawl_proxies)
+            except RuntimeError, err:
+                logger.error("无效的代理IP，不使用代理")
+                text = super(XiciProxyCrawler, self).fetch_content()
+            finally:
+                return text
 
     def crawl(self):
         if self.has_visit():
             self.get_next_url()
-            logger2.debug("Cur url - {}".format(self.url))
+            logger.debug("Cur url - {}".format(self.url))
 
         content = self.fetch_content()
+        if content is None:
+            raise RuntimeError("抓取代理网页失败, 地址{}".format(self.url))
         self.parse_ip_list(content)
         return self.proxies
 
