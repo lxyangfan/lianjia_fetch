@@ -3,8 +3,6 @@ import random
 import multiprocessing as MP
 from mp_task_run import run_tasks
 from task_def import CrawlLianjiaTask
-from proxy_save_csv import save_csv
-from lib.file_util import read_csv_to_queue
 
 
 def get_proxies(proxies=None):
@@ -18,7 +16,7 @@ def random_get_proxy():
     proxies = get_proxies()
     size = len(proxies)
     if size >= 1:
-        ind = random.randint(0, size-1)
+        ind = random.randint(0, size - 1)
         return proxies[ind]
     else:
         return None
@@ -33,8 +31,8 @@ def fetch_lianjia():
     tasks = MP.JoinableQueue()
     results = MP.Queue()
     task_urls = MP.Queue()
-    base_url = "http://sh.lianjia.com/ershoufang/"
-    for i in xrange(1, 100):
+    base_url = "http://sh.lianjia.com/ershoufang/d"
+    for i in xrange(1, 101):
         task_urls.put("{}{}".format(base_url, i))
 
     num_jobs = 0

@@ -24,6 +24,7 @@ class BaseCrawler(object):
         self.proxies = proxies
 
     def fetch_content(self, proxies=None):
+        print "fetch url: ", self.url
         if proxies is None:
             xx = requests.get(self.url, headers=self.headers)
             return xx.text
