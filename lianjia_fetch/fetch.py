@@ -56,11 +56,11 @@ def parse_prop_distric_and_year(str, item={}):
     item.update({'addr' : list[0].encode("utf8")})
     item.update({'district' : list[1].encode("utf8")})
     item.update({'town' : list[2].encode("utf8")})
-
-    year_p_str = r'\d+(?=年)'
-    m = re.search(year_p_str, list[3].encode("utf8"))
-    if m:
-        item.update({'year' : int(m.group())})
+    if len(list) >= 4:
+        year_p_str = r'\d+(?=年)'
+        m = re.search(year_p_str, list[3].encode("utf8"))
+        if m:
+            item.update({'year' : int(m.group())})
     else:
         item.update({'year' : None})
     return item
@@ -82,7 +82,7 @@ def parse_prop_size_info(str, item):
     size =  parse_helper(str, size_pattern_str)
     item['size'] = float(size)
     total_floor =  parse_helper(str, total_floor_pattern_str)
-    item['total_floor'] = int(total_floor)
+    item['total_floor'] = int(total_floor) if total_floor is not None else None
     floor_position =  parse_helper(str, floor_position_pattern_str)
     item['floor_position'] = floor_position
     build_face =  parse_helper(str, build_face_pattern_str)

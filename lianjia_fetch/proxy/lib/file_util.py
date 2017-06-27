@@ -2,10 +2,22 @@
 import csv
 
 
-def save_csv(file_name, list_var, mode='a'):
+def save_prop_csv(file_name, list_var, mode='wb'):
+    with open(file_name, mode) as f:
+        for row in list_var:
+            for key, value in sorted(row.items()):
+                f.write(str(key) + ':')
+                if type(value) == unicode:
+                    f.write(str(value.encode("utf-8")) + ",")
+                else:
+                    f.write("{},".format(value))
+            f.write("\n")
+
+
+def save_csv(file_name, set_var, mode='a'):
     with open(file_name, mode) as f:
         writer = csv.writer(f, delimiter='\n')
-        writer.writerow(list_var)
+        writer.writerow(list(set_var))
 
 
 def test_csv():
