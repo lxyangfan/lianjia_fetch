@@ -92,7 +92,7 @@ def main():
 
     # Enqueue jobs
     num_jobs = 5
-    for i in xrange(num_jobs):
+    for i in xrange(1, num_jobs):
         url = 'http://www.xicidaili.com/nn/{0}'.format(i)
         tasks.put(CrawTask(url))
 

@@ -4,6 +4,8 @@ import time
 
 from mp_task_run import run_tasks
 from task_def import CrawTask, VarifyProxyTask
+from proxy_save_csv import save_csv
+from lib.file_util import read_csv_to_queue
 
 
 def fetch_proxies(page_num=2, save_file='new_proxy'):
@@ -35,7 +37,7 @@ def varify_proxies(read_file='dt.csv', save_file='useful.csv'):
     read_csv_to_queue(read_file, proxy_queue)
 
     num_jobs = 0
-    max_num_jobs = 1000
+    max_num_jobs = 100
     while not proxy_queue.empty() and num_jobs <= max_num_jobs:
         proxy = proxy_queue.get()
         tasks.put(VarifyProxyTask(proxy, timeout=1))
@@ -50,8 +52,8 @@ def varify_proxies(read_file='dt.csv', save_file='useful.csv'):
             final_proxy.append(result)
         num_jobs -= 1
     # save the useful
-    save_csv(save_file, final_proxy, mode='a')
+    save_csv(save_file, final_proxy, mode='w')
 
 
 if __name__ == '__main__':
-    varify_proxies()
+    varify_proxies(read_file="useful627.csv", save_file="useful627-2.csv")

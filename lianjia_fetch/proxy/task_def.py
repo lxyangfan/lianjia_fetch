@@ -2,7 +2,7 @@
 
 import time, csv, re, requests
 from bs4 import BeautifulSoup as Bs
-
+from crawler.lianjia_crawler import LianJiaSHCrawler
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -68,3 +68,22 @@ class CrawTask(object):
 
     def __str__(self):
         return 'Craw Url: %s  ' % self.url
+
+
+class CrawlLianjiaTask(object):
+    """ CrawlLianjiaTask  task """
+
+    def __init__(self, url, proxy_ip=None):
+        self.url = url
+        if proxy_ip is None:
+            self.proxy = None
+        else:
+            self.proxy = {'http': proxy_ip, 'https': proxy_ip}
+        self.crawler = LianJiaSHCrawler(url=url, proxies=self.proxy)
+
+    def __call__(self):
+        try:
+            res = self.crawler.crawl()
+            return res
+        except:
+            return None
