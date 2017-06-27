@@ -3,6 +3,7 @@ import logging
 from logging.config import fileConfig
 from bs4 import BeautifulSoup as Bs
 from xici_proxy_crawler import XiciProxyCrawler
+from mock_proxy_crawler import MockIPCrawler
 from thread_safe_set import LockedSet
 from proxy_producer import ProxyProducer
 from pool import ProxyPool
@@ -19,7 +20,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
 
-crawler = XiciProxyCrawler(headers=headers)
+crawler = MockIPCrawler(url='localhost', headers=headers)
 pool = ProxyPool(crawler=crawler, maxSize=20)
 
 producer = ProxyProducer(event=None,pool=pool, name="Producer1")
