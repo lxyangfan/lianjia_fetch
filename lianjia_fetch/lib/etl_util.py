@@ -66,6 +66,20 @@ def line_to_dict(line):
     return None
 
 
+def save_dict_list_in_csv(file_name, dict_list=None):
+    with open(file_name, mode="w") as csvfile:
+        fwriter = csv.writer(csvfile)
+        for item in dict_list:
+            list_v = []
+            for k,v in sorted(item.items()):
+                if type(v) == unicode:
+                    list_v.append(v.encode("utf-8"))
+                else:
+                    list_v.append(v)
+            fwriter.writerow(list_v)
+
+
+
 if __name__ == "__main__":
     lv = load_pros("../data/pros-0627.csv")
     save_props_without_key("../data/props.csv", lv)

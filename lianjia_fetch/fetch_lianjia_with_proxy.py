@@ -1,8 +1,12 @@
-from lib.file_util import read_csv_to_list, save_prop_csv
+# -*- encoding:utf-8 -*-
+from lib.etl_util import save_props_without_key
+from proxy.lib.file_util import read_csv_to_list, save_prop_csv
+
 import random
 import multiprocessing as MP
-from mp_task_run import run_tasks
-from task_def import CrawlLianjiaTask
+from proxy.mp_task_run import run_tasks
+from proxy.task_def import CrawlLianjiaTask
+from datetime import date
 
 
 def get_proxies(proxies=None):
@@ -22,10 +26,6 @@ def random_get_proxy():
         return None
 
 
-def main():
-    threads = []
-
-
 def fetch_lianjia():
     # Establish communication queues
     tasks = MP.JoinableQueue()
@@ -39,7 +39,6 @@ def fetch_lianjia():
     max_num_jobs = 100
     while not task_urls.empty() and num_jobs <= max_num_jobs:
         url = task_urls.get()
-        proxy = random_get_proxy()
         tasks.put(CrawlLianjiaTask(url=url, proxy_ip=None))
         num_jobs += 1
 
@@ -48,7 +47,8 @@ def fetch_lianjia():
     while num_jobs:
         result = results.get()
         if result is not None:
-            save_prop_csv("pros-0627.csv", result, mode="a")
+            file_name = "../data/props-{}.csv".format(date.today())
+            save_props_without_key(file_name, result, mode="a")
         num_jobs -= 1
 
 
