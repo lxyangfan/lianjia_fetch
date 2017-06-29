@@ -4,6 +4,9 @@ import re
 
 
 def save_props(file_name, list_var, mode='wb'):
+    """
+        以csv格式保存 dictList 对象，保留key:value,key:value,格式
+    """
     with open(file_name, mode) as f:
         for row in list_var:
             for key, value in sorted(row.items()):
@@ -16,6 +19,9 @@ def save_props(file_name, list_var, mode='wb'):
 
 
 def save_props_without_key(file_name, list_var, mode='wb'):
+    """
+        以csv格式保存 dictList 对象，只按照key升序保留value
+    """
     with open(file_name, mode) as f:
         for row in list_var:
             for key, value in sorted(row.items()):
@@ -27,6 +33,9 @@ def save_props_without_key(file_name, list_var, mode='wb'):
 
 
 def load_pros(file_name, list_var=None):
+    """
+        从文件中读取房产数据，文件的每一行格式是：key1:value1,key2:value2,
+    """
     if list_var is None:
         list_var = []
 
@@ -67,6 +76,9 @@ def line_to_dict(line):
 
 
 def save_dict_list_in_csv(file_name, dict_list=None):
+    """
+        保存字典list对象到csv文件，不包括列信息
+    """
     with open(file_name, mode="w") as csvfile:
         fwriter = csv.writer(csvfile)
         for item in dict_list:
