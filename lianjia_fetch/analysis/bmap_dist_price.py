@@ -20,7 +20,7 @@ class ResolveLocation(object):
     def __call__(self):
         try:
             url = u'http://maps.google.com/maps/api/geocode/json?address=上海市{0}{1}&language=zh-CN&sensor=false'.format(
-                self.position["district"], self.position["town"])
+            self.position["district"], self.position["town"])
             print "访问URL: ", url
             resp = requests.get(url=url, proxies=proxies, timeout=5)
             if resp.status_code == 200:
@@ -69,18 +69,13 @@ def load_data(list_v=None):
     return list_v
 
 
-def load_json_data():
-    with open("../data/dt/dist_town_price-{}.json".format(date.today()), mode="r") as jsonfile:
-        return json.load(jsonfile)
-
-
 def resove_location():
     # Establish communication queues
     tasks = MP.JoinableQueue()
     results = MP.Queue()
     task_postions = MP.Queue()
 
-    list_v = load_json_data()
+    list_v = load_data()
     for i in list_v:
         task_postions.put(i)
 
