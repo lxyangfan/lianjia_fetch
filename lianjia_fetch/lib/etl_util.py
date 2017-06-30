@@ -1,6 +1,7 @@
 #! -*- encoding:utf-8 -*-
 import csv
 import re
+import json
 
 
 def save_props(file_name, list_var, mode='wb'):
@@ -83,7 +84,7 @@ def save_dict_list_in_csv(file_name, dict_list=None):
         fwriter = csv.writer(csvfile)
         for item in dict_list:
             list_v = []
-            for k,v in sorted(item.items()):
+            for k, v in sorted(item.items()):
                 if type(v) == unicode:
                     list_v.append(v.encode("utf-8"))
                 else:
@@ -91,7 +92,28 @@ def save_dict_list_in_csv(file_name, dict_list=None):
             fwriter.writerow(list_v)
 
 
+def load_dict_list_json(file_name):
+    """
+        读取json到dict_list中
+    :param file_name:
+    :return:
+    """
+    with open(file_name, mode="r") as json_file:
+        return json.load(json_file)
+
+
+def save_dict_list_json(file_name, dict_list):
+    """
+        保存json到file
+    :param file_name:
+    :return:
+    """
+    with open(file_name, 'w') as outfile:
+        json.dump(dict_list, outfile)
+
 
 if __name__ == "__main__":
-    lv = load_pros("../data/pros-0627.csv")
-    save_props_without_key("../data/props.csv", lv)
+    # lv = load_pros("../data/pros-0627.csv")
+    # save_props_without_key("../data/props.csv", lv)
+    lv = load_dict_list_json("../data/dt/dist_town_price-2017-06-30.json")
+    print lv

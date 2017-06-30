@@ -20,4 +20,7 @@ dist_town_ordered = dist_town.sort_values(by="unit_price", ascending=False).rese
 
 
 dist_town_df = dist_town_ordered[["district", "town", "unit_price"]]
+
+# 还挺优雅的
+dist_town_df["district"] = dist_town_df["district"].apply(lambda s: u"浦东新区"  if s == u"浦东" else u"{}区".format(s))
 dist_town_df.to_json("../data/dt/dist_town_price-{}.json".format(date.today()), orient="records")
