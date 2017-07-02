@@ -1,6 +1,6 @@
 #! -*- encoding:utf-8 -*-
 
-import logging
+import log_util
 from Queue import Queue
 from thread_safe_set import LockedSet
 from threading import Lock

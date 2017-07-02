@@ -2,6 +2,8 @@
 import csv
 import re
 import json
+import pandas as pd
+from datetime import date
 
 
 def save_props(file_name, list_var, mode='wb'):
@@ -112,8 +114,27 @@ def save_dict_list_json(file_name, dict_list):
         json.dump(dict_list, outfile)
 
 
+def compute_unit_price(raw_list=None):
+    """
+        从链家抓取的dict_list，处理并且返回dict_list
+    :param raw_list:
+    :return: 返回dict
+    """
+    if raw_list is None:
+        raw_list = load_dict_list_json("../data/preowened-{}.json".format(date.today()))
+    dict_list = []
+    for one_page_data in raw_list:
+        dict_list.extend(one_page_data)
+    dist_town_price = pd.DataFrame.from_dict(dict_list).astype({'price': float})
+    preowned = dist_town_price.loc[:, ["addr", "district", "town", "year", "price", "size"]]
+    preowned.loc[:, "unit_size"] = preowned["price"] / preowned["size"]
+    preowned.loc[:, "district"] = preowned["district"].apply(lambda s: u"浦东新区" if s == u"浦东" else u"{}区".format(s))
+    preowned.loc[:, "addr"] = preowned["district"] + preowned["town"] + preowned["addr"]
+    return preowned.to_dict(orient="records")
+
+
 if __name__ == "__main__":
     # lv = load_pros("../data/pros-0627.csv")
     # save_props_without_key("../data/props.csv", lv)
-    lv = load_dict_list_json("../data/dt/dist_town_price-2017-06-30.json")
+    lv = load_dict_list_json("../data/preowened-2017-06-30.json")
     print lv

@@ -1,14 +1,14 @@
 #! -*- encoding:utf-8 -*-
 import re
-import logging
-from logging.config import fileConfig
+import log_util
+from log_util.config import fileConfig
 from bs4 import BeautifulSoup as Bs
 from proxy_crawler import IProxyCrawler
 from thread_safe_set import LockedSet
 from multiprocessing import Lock
 
 fileConfig("log-conf.ini")
-logger = logging.getLogger("debugLog")
+logger = log_util.getLogger("debugLog")
 
 class XiciProxyCrawler(IProxyCrawler):
     """

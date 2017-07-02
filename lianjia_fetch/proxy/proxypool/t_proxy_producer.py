@@ -1,6 +1,6 @@
 #! -*- encoding:utf-8 -*-
-import logging
-from logging.config import fileConfig
+import log_util
+from log_util.config import fileConfig
 from bs4 import BeautifulSoup as Bs
 from xici_proxy_crawler import XiciProxyCrawler
 from mock_proxy_crawler import MockIPCrawler
@@ -10,7 +10,7 @@ from pool import ProxyPool
 
 
 fileConfig("log-conf.ini")
-logger = logging.getLogger("debugLog")
+logger = log_util.getLogger("debugLog")
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',

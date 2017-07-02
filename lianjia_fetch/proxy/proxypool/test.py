@@ -2,12 +2,12 @@
 from xici_proxy_crawler import XiciProxyCrawler
 from threading import Thread
 from multiprocessing import Queue
-from logging.config import fileConfig
+from log_util.config import fileConfig
 import time
-import logging
+import log_util
 
 fileConfig("log-conf.ini")
-logger = logging.getLogger("debugLog")
+logger = log_util.getLogger("debugLog")
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',

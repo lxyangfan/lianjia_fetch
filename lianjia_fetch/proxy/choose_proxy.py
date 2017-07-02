@@ -1,16 +1,16 @@
 #! -*- encoding:utf-8 -*-
 
-import logging
+import log_util
 from lib.file_util import read_csv_to_list
 from task_def import VarifyProxyTask
 
-logger = logging.getLogger()
-handler = logging.StreamHandler()
-formatter = logging.Formatter(
+logger = log_util.getLogger()
+handler = log_util.StreamHandler()
+formatter = log_util.Formatter(
     '%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(log_util.DEBUG)
 
 
 def choose_one_useful_proxy():

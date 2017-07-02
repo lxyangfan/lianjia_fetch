@@ -9,9 +9,9 @@ import json
 import multiprocessing as MP
 import csv
 from datetime import date
-from lianjia_fetch.proxy.mp_task_run import run_tasks
-from lianjia_fetch.lib.etl_util import save_dict_list_json, load_dict_list_json
-from lianjia_fetch.lib.url_util import url_encode_unicode
+from proxy.mp_task_run import run_tasks
+from lib.etl_util import save_dict_list_json, load_dict_list_json
+from lib.url_util import url_encode_unicode
 
 APP_key = "cvENTqYHfb5sLjXMQ4yWHKIPmx38ACs3"
 
@@ -26,9 +26,8 @@ class BaiduResolveLocation(object):
 
     def __call__(self):
         try:
-            url = u'http://api.map.baidu.com/geocoder/v2/?output=json&ret_coordtype=bd09ll&ak={0}&address={1}{2}{3}'.format(
-                APP_key, url_encode_unicode(u"上海市"), url_encode_unicode(self.position["district"]),
-                url_encode_unicode(self.position["town"]))
+            url = u'http://api.map.baidu.com/geocoder/v2/?output=json&ret_coordtype=bd09ll&ak={0}&address={1}{2}'.format(
+                APP_key, url_encode_unicode(u"上海市"), url_encode_unicode(self.position["addr"]))
             print "访问URL: ", url
             resp = requests.get(url=url, timeout=5)
             if resp.status_code == 200:
@@ -52,13 +51,14 @@ def load_data():
     return load_dict_list_json("../data/dt/dist_town_price-{}.json".format(date.today()))
 
 
-def resolve_location():
+def resolve_location(list_v=None, savefile=None):
     # Establish communication queues
     tasks = MP.JoinableQueue()
     results = MP.Queue()
     task_postions = MP.Queue()
 
-    list_v = load_data()
+    if list_v is None:
+        list_v = load_data()
     for i in list_v:
         task_postions.put(i)
 
@@ -80,8 +80,9 @@ def resolve_location():
             dict_list.append(result)
         num_jobs -= 1
 
-    file_name = "../data/json/price_location-{}.json".format(date.today())
-    save_dict_list_json(file_name, dict_list)
+
+    print "保存文件到{}".format(savefile)
+    save_dict_list_json(savefile, dict_list)
     print "保存文件结束..."
 
 

@@ -1,6 +1,14 @@
 # ! -*- encoding:utf8 -*-
 import multiprocessing as MP
 import time, csv, re
+import logging
+import os
+from logging.config import fileConfig
+# from pathlib import Path
+
+# pa = Path("log_util/log_conf.ini").resolve()
+fileConfig("log_util/log_conf.ini")
+logger = logging.getLogger("mpTaskRunLog")
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -20,17 +28,21 @@ class Consumer(MP.Process):
 
     def run(self):
         proc_name = self.name
-        while True:
-            next_task = self.task_queue.get()
-            if next_task is None:
-                # Poison pill means shutdown
-                print '%s: Exiting' % proc_name
+        try:
+            while True:
+                next_task = self.task_queue.get()
+                if next_task is None:
+                    # Poison pill means shutdown
+                    print '%s: Exiting' % proc_name
+                    self.task_queue.task_done()
+                    break
+                #print '%s: %s' % (proc_name, next_task)
+                answer = next_task()
                 self.task_queue.task_done()
-                break
-            #print '%s: %s' % (proc_name, next_task)
-            answer = next_task()
-            self.task_queue.task_done()
-            self.result_queue.put(answer)
+                self.result_queue.put(answer)
+        except RuntimeError, err:
+            # TODO handle with err
+            logger.error("工作进程出错", err)
         return
 
 

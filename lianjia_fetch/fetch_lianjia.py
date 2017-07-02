@@ -1,5 +1,5 @@
 # -*- encoding:utf-8 -*-
-from lib.etl_util import save_props_without_key
+from lib.etl_util import save_dict_list_json, compute_unit_price
 from proxy.lib.file_util import read_csv_to_list, save_prop_csv
 
 import random
@@ -44,12 +44,18 @@ def fetch_lianjia():
 
     run_tasks(tasks, results)
 
+    dict_list = []
     while num_jobs:
         result = results.get()
         if result is not None:
-            file_name = "../data/props-{}.csv".format(date.today())
-            save_props_without_key(file_name, result, mode="a")
+            dict_list.append(result)
         num_jobs -= 1
+
+    file_name = "../data/preowened-{}.json".format(date.today())
+    save_dict_list_json(file_name, dict_list)
+
+    # addr_price = compute_unit_price(dict_list)
+    # resolve_location(addr_price)
 
 
 if __name__ == '__main__':
