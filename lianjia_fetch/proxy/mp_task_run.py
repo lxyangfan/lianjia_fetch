@@ -33,12 +33,12 @@ class Consumer(MP.Process):
                     # Poison pill means shutdown
                     print '%s: Exiting' % proc_name
                     self.task_queue.task_done()
-                    break
+                    return
                 # print '%s: %s' % (proc_name, next_task)
                 answer = next_task()
                 self.task_queue.task_done()
                 self.result_queue.put(answer)
-                time.sleep(0.1)  # Just enough to let the Queue finish
+                time.sleep(0.01)  # Just enough to let the Queue finish
         except RuntimeError, err:
             # TODO handle with err
             logger.error("工作进程出错", err)

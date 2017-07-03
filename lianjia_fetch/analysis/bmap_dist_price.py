@@ -8,12 +8,13 @@ import json
 import multiprocessing as MP
 import logging
 from logging.config import fileConfig
+from random import randint
 from datetime import date
-from lianjia_fetch.proxy.mp_task_run import run_tasks
-from lianjia_fetch.lib.etl_util import save_dict_list_json, load_dict_list_json
-from lianjia_fetch.lib.url_util import url_encode_unicode
+from proxy.mp_task_run import run_tasks
+from lib.etl_util import save_dict_list_json, load_dict_list_json
+from lib.url_util import url_encode_unicode
 
-APP_key = "cvENTqYHfb5sLjXMQ4yWHKIPmx38ACs3"
+APP_key = ["cvENTqYHfb5sLjXMQ4yWHKIPmx38ACs3", "64KOkcAIwZOECl05CCCbcFjvgjY5Pslt"]
 fileConfig("log_util/log_conf.ini")
 
 logger = logging.getLogger("bMapLog")
@@ -29,8 +30,10 @@ class BaiduResolveLocation(object):
 
     def __call__(self):
         try:
+            key = randint(0, 1)
+            logger.debug("选择第{0}个key,{1}".format(key + 1, APP_key[key]))
             url = u'http://api.map.baidu.com/geocoder/v2/?output=json&ret_coordtype=bd09ll&ak={0}&address={1}{2}'.format(
-                APP_key, url_encode_unicode(u"上海市"), url_encode_unicode(self.position["addr"]))
+                APP_key[key], url_encode_unicode(u"上海市"), url_encode_unicode(self.position["addr"]))
             print "访问URL: ", url
             resp = requests.get(url=url, timeout=5)
             if resp.status_code == 200:
@@ -58,19 +61,18 @@ def resolve_location(list_v=None, savefile=None, max_jobs=3000):
     # Establish communication queues
     tasks = MP.JoinableQueue()
     results = MP.Queue()
-    task_postions = MP.Queue()
     num_jobs = 0
     max_num_jobs = max_jobs  # 配置最大处理的数据量
 
     if list_v is None:
         list_v = load_data()
-    for i in list_v:
-        task_postions.put(i)
 
-    while not task_postions.empty() and num_jobs <= max_num_jobs:
-        position = task_postions.get()
-        tasks.put(BaiduResolveLocation(position=position))
-        num_jobs += 1
+    for item in list_v:
+        if num_jobs < max_num_jobs:
+            tasks.put(BaiduResolveLocation(position=item))
+            num_jobs += 1
+        else:
+            break
 
     run_tasks(tasks, results)
 
@@ -80,7 +82,7 @@ def resolve_location(list_v=None, savefile=None, max_jobs=3000):
     try:
         dict_list = []
         while num_jobs and not results.empty():
-            result = results.get(timeout=0.01)
+            result = results.get()
             if result is not None:
                 dict_list.append(result)
             num_jobs -= 1
@@ -89,6 +91,7 @@ def resolve_location(list_v=None, savefile=None, max_jobs=3000):
     finally:
         logger.debug("处理后，有效{}条数据".format(len(dict_list)))
         results.close()  # 关闭掉后台的thread，防止出现mainThread结束了，而pipe的feedThread还没关闭
+        results.join_thread()  # waits util后台线程退出
 
         print "保存文件到{}".format(savefile)
         save_dict_list_json(savefile, dict_list)
