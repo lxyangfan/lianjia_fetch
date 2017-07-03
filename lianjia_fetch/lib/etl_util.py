@@ -2,8 +2,13 @@
 import csv
 import re
 import json
+import logging
+from logging.config import fileConfig
 import pandas as pd
 from datetime import date
+
+fileConfig("log_util/log_conf.ini")
+logger = logging.getLogger("logUtil")
 
 
 def save_props(file_name, list_var, mode='wb'):
@@ -122,15 +127,21 @@ def compute_unit_price(raw_list=None):
     """
     if raw_list is None:
         raw_list = load_dict_list_json("../data/preowened-{}.json".format(date.today()))
+    logger.debug("原始数据list数据{}条".format(len(raw_list)))
+
     dict_list = []
     for one_page_data in raw_list:
         dict_list.extend(one_page_data)
+    logger.debug("扩展完一页数据，dict_list数据{}条".format(len(dict_list)))
+
     dist_town_price = pd.DataFrame.from_dict(dict_list).astype({'price': float})
     preowned = dist_town_price.loc[:, ["addr", "district", "town", "year", "price", "size"]]
     preowned.loc[:, "unit_size"] = preowned["price"] / preowned["size"]
     preowned.loc[:, "district"] = preowned["district"].apply(lambda s: u"浦东新区" if s == u"浦东" else u"{}区".format(s))
     preowned.loc[:, "addr"] = preowned["district"] + preowned["town"] + preowned["addr"]
-    return preowned.to_dict(orient="records")
+    ret_dic_list = preowned.to_dict(orient="records")
+    logger.debug("最终ret_dict_list数据{}条".format(len(ret_dic_list)))
+    return ret_dic_list
 
 
 if __name__ == "__main__":

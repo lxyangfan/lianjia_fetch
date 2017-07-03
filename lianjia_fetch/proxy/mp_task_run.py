@@ -3,10 +3,9 @@ import multiprocessing as MP
 import time, csv, re
 import logging
 import os
+import time
 from logging.config import fileConfig
-# from pathlib import Path
 
-# pa = Path("log_util/log_conf.ini").resolve()
 fileConfig("log_util/log_conf.ini")
 logger = logging.getLogger("mpTaskRunLog")
 
@@ -17,7 +16,6 @@ headers = {
     'Connection': 'keep-alive',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
-
 
 
 class Consumer(MP.Process):
@@ -36,10 +34,11 @@ class Consumer(MP.Process):
                     print '%s: Exiting' % proc_name
                     self.task_queue.task_done()
                     break
-                #print '%s: %s' % (proc_name, next_task)
+                # print '%s: %s' % (proc_name, next_task)
                 answer = next_task()
                 self.task_queue.task_done()
                 self.result_queue.put(answer)
+                time.sleep(0.1)  # Just enough to let the Queue finish
         except RuntimeError, err:
             # TODO handle with err
             logger.error("工作进程出错", err)
@@ -60,4 +59,3 @@ def run_tasks(tasks_queue, results_queue):
 
     # Wait for all of the tasks to finish
     tasks_queue.join()
-
