@@ -10,6 +10,7 @@ import logging
 from logging.config import fileConfig
 from random import randint
 from datetime import date
+import time
 from proxy.mp_task_run import run_tasks
 from lib.etl_util import save_dict_list_json, load_dict_list_json
 from lib.url_util import url_encode_unicode
@@ -35,7 +36,7 @@ class BaiduResolveLocation(object):
             url = u'http://api.map.baidu.com/geocoder/v2/?output=json&ret_coordtype=bd09ll&ak={0}&address={1}{2}'.format(
                 APP_key[key], url_encode_unicode(u"上海市"), url_encode_unicode(self.position["addr"]))
             print "访问URL: ", url
-            resp = requests.get(url=url, timeout=5)
+            resp = requests.get(url=url, timeout=60)
             if resp.status_code == 200:
                 base = json.loads(resp.text)
                 if base["status"] == 0:
@@ -45,6 +46,9 @@ class BaiduResolveLocation(object):
                 else:
                     self.position["lat"] = None
                     self.position["lng"] = None
+                logger.debug("获取位置成功！")
+                logger.info("POSITION:" + str(self.position))
+                time.sleep(0.5)
                 return self.position
             else:
                 return None
