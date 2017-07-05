@@ -2,7 +2,7 @@
 
 import time, csv, re, requests
 from bs4 import BeautifulSoup as Bs
-from crawler.lianjia_crawler import LianJiaSHCrawler
+from lianjia_fetch.crawler.lianjia_crawler import  LianJiaSHCrawler
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
