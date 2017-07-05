@@ -35,18 +35,21 @@ def fetch_lianjia():
     # Establish communication queues
     tasks = MP.JoinableQueue()
     results = MP.Queue()
-    task_urls = MP.Queue()
     base_url = "http://sh.lianjia.com/ershoufang/d"
+    url_list = []
     for i in xrange(1, 101):
-        task_urls.put("{}{}".format(base_url, i))
+        url = "{0}{1}".format(base_url, i)
+        print "gen ", url
+        url_list.append(url)
+        
 
     num_jobs = 0
     max_num_jobs = 100
-    while not task_urls.empty() and num_jobs <= max_num_jobs:
-        url = task_urls.get()
-        tasks.put(CrawlLianjiaTask(url=url, proxy_ip=None))
-        num_jobs += 1
-
+    for url in url_list:
+        if num_jobs < max_num_jobs:
+            tasks.put(CrawlLianjiaTask(url=url, proxy_ip=None))
+            num_jobs += 1
+    
     logger.info("开始抓取...")
     run_tasks(tasks, results)
 
@@ -64,7 +67,6 @@ def fetch_lianjia():
 
     # addr_price = compute_unit_price(dict_list)
     # resolve_location(addr_price)
-
 
 if __name__ == '__main__':
     fetch_lianjia()
