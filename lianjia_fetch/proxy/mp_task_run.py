@@ -6,7 +6,12 @@ import os
 import time
 from logging.config import fileConfig
 
-fileConfig("log_util/log_conf.ini")
+
+dir_name = os.path.abspath( os.path.dirname( __file__ ) + "/../" )
+conf_path = os.path.join( dir_name, "log_util/log_conf.ini" )
+print conf_path
+
+fileConfig( conf_path )
 logger = logging.getLogger("mpTaskRunLog")
 
 headers = {

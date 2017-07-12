@@ -5,12 +5,15 @@ from proxy.lib.file_util import read_csv_to_list, save_prop_csv
 import random
 import multiprocessing as MP
 import logging
+import os
 from logging.config import fileConfig
 from proxy.mp_task_run import run_tasks
 from proxy.task_def import CrawlLianjiaTask
 from datetime import date
 
-fileConfig("log_util/log_conf.ini")
+conf_path = os.path.abspath( os.path.dirname( __file__ ) + "/log_util/log_conf.ini" )
+
+fileConfig(conf_path)
 logger = logging.getLogger("fetchMainLog")
 
 
@@ -39,7 +42,6 @@ def fetch_lianjia():
     url_list = []
     for i in xrange(1, 101):
         url = "{0}{1}".format(base_url, i)
-        print "gen ", url
         url_list.append(url)
         
 
@@ -61,7 +63,8 @@ def fetch_lianjia():
             dict_list.append(result)
         num_jobs -= 1
 
-    file_name = "data/preowened-{}.json".format(date.today())
+    save_file_path = os.path.abspath( os.path.dirname( __file__ ) )
+    file_name = "{0}/data/preowened-{1}.json".format(save_file_path, date.today())
     save_dict_list_json(file_name, dict_list)
     logger.info("结束保存文件...")
 

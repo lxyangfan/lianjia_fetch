@@ -1,0 +1,12 @@
+#!/bin/sh
+date >> /home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/py-logs.txt
+PATH=/home/ubuntu/bin:/home/ubuntu/.local/bin:/opt/anaconda2/bin:/usr/lib/jvm/java-8-oracle//bin:/home/ubuntu/anaconda2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+
+echo "Aws begin fetch..." >> /home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/py-logs.txt
+python /home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/fetch_lianjia.py  2>&1 1 >>  /home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/py-logs.txt
+
+echo "Finished feth, begins commiting..." >> /home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/py-logs.txt
+git add data/
+git commit -m "AWS cron auto fetch"
+git push origin linuxDev
+echo "AWS cron auto fetch and commited..." >> /home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/py-logs.txt

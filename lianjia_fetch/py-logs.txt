@@ -1,0 +1,164 @@
+2017-07-05 09:39:01
+
+2017-07-05 09:40:01
+
+2017-07-05 09:41:01
+
+2017-07-05 09:42:01
+
+2017-07-05 09:43:01
+
+2017-07-05 09:44:01
+
+2017-07-05 09:45:01
+
+2017-07-05 09:46:01
+
+2017-07-05 09:47:01
+
+2017-07-05 09:48:01
+
+2017-07-05 09:49:01
+
+2017-07-05 09:50:01
+
+2017-07-05 09:51:01
+
+2017-07-05 09:52:01
+
+2017-07-05 09:53:01
+
+2017-07-05 09:54:01
+
+2017-07-05 09:55:01
+
+2017-07-05 09:56:01
+
+2017-07-05 09:57:01
+
+2017-07-05 09:58:01
+
+2017-07-05 09:59:01
+
+2017-07-05 10:00:01
+
+2017-07-05 10:01:01
+
+2017-07-05 10:02:01
+
+2017-07-05 10:03:01
+
+2017-07-05 10:04:01
+
+2017-07-05 10:05:01
+
+Wed Jul  5 22:51:01 CST 2017
+Aws begin fetch...
+Finished feth, begins commiting...
+AWS cron auto fetch and commited...
+Wed Jul  5 22:53:48 CST 2017
+Aws begin fetch...
+gen  http://sh.lianjia.com/ershoufang/d1
+gen  http://sh.lianjia.com/ershoufang/d2
+gen  http://sh.lianjia.com/ershoufang/d3
+gen  http://sh.lianjia.com/ershoufang/d4
+gen  http://sh.lianjia.com/ershoufang/d5
+gen  http://sh.lianjia.com/ershoufang/d6
+gen  http://sh.lianjia.com/ershoufang/d7
+gen  http://sh.lianjia.com/ershoufang/d8
+gen  http://sh.lianjia.com/ershoufang/d9
+gen  http://sh.lianjia.com/ershoufang/d10
+gen  http://sh.lianjia.com/ershoufang/d11
+gen  http://sh.lianjia.com/ershoufang/d12
+gen  http://sh.lianjia.com/ershoufang/d13
+gen  http://sh.lianjia.com/ershoufang/d14
+gen  http://sh.lianjia.com/ershoufang/d15
+gen  http://sh.lianjia.com/ershoufang/d16
+gen  http://sh.lianjia.com/ershoufang/d17
+gen  http://sh.lianjia.com/ershoufang/d18
+gen  http://sh.lianjia.com/ershoufang/d19
+gen  http://sh.lianjia.com/ershoufang/d20
+gen  http://sh.lianjia.com/ershoufang/d21
+gen  http://sh.lianjia.com/ershoufang/d22
+gen  http://sh.lianjia.com/ershoufang/d23
+gen  http://sh.lianjia.com/ershoufang/d24
+gen  http://sh.lianjia.com/ershoufang/d25
+gen  http://sh.lianjia.com/ershoufang/d26
+gen  http://sh.lianjia.com/ershoufang/d27
+gen  http://sh.lianjia.com/ershoufang/d28
+gen  http://sh.lianjia.com/ershoufang/d29
+gen  http://sh.lianjia.com/ershoufang/d30
+gen  http://sh.lianjia.com/ershoufang/d31
+gen  http://sh.lianjia.com/ershoufang/d32
+gen  http://sh.lianjia.com/ershoufang/d33
+gen  http://sh.lianjia.com/ershoufang/d34
+gen  http://sh.lianjia.com/ershoufang/d35
+gen  http://sh.lianjia.com/ershoufang/d36
+gen  http://sh.lianjia.com/ershoufang/d37
+gen  http://sh.lianjia.com/ershoufang/d38
+gen  http://sh.lianjia.com/ershoufang/d39
+gen  http://sh.lianjia.com/ershoufang/d40
+gen  http://sh.lianjia.com/ershoufang/d41
+gen  http://sh.lianjia.com/ershoufang/d42
+gen  http://sh.lianjia.com/ershoufang/d43
+gen  http://sh.lianjia.com/ershoufang/d44
+gen  http://sh.lianjia.com/ershoufang/d45
+gen  http://sh.lianjia.com/ershoufang/d46
+gen  http://sh.lianjia.com/ershoufang/d47
+gen  http://sh.lianjia.com/ershoufang/d48
+gen  http://sh.lianjia.com/ershoufang/d49
+gen  http://sh.lianjia.com/ershoufang/d50
+gen  http://sh.lianjia.com/ershoufang/d51
+gen  http://sh.lianjia.com/ershoufang/d52
+gen  http://sh.lianjia.com/ershoufang/d53
+gen  http://sh.lianjia.com/ershoufang/d54
+gen  http://sh.lianjia.com/ershoufang/d55
+gen  http://sh.lianjia.com/ershoufang/d56
+gen  http://sh.lianjia.com/ershoufang/d57
+gen  http://sh.lianjia.com/ershoufang/d58
+gen  http://sh.lianjia.com/ershoufang/d59
+gen  http://sh.lianjia.com/ershoufang/d60
+gen  http://sh.lianjia.com/ershoufang/d61
+gen  http://sh.lianjia.com/ershoufang/d62
+gen  http://sh.lianjia.com/ershoufang/d63
+gen  http://sh.lianjia.com/ershoufang/d64
+gen  http://sh.lianjia.com/ershoufang/d65
+gen  http://sh.lianjia.com/ershoufang/d66
+gen  http://sh.lianjia.com/ershoufang/d67
+gen  http://sh.lianjia.com/ershoufang/d68
+gen  http://sh.lianjia.com/ershoufang/d69
+gen  http://sh.lianjia.com/ershoufang/d70
+gen  http://sh.lianjia.com/ershoufang/d71
+gen  http://sh.lianjia.com/ershoufang/d72
+gen  http://sh.lianjia.com/ershoufang/d73
+gen  http://sh.lianjia.com/ershoufang/d74
+gen  http://sh.lianjia.com/ershoufang/d75
+gen  http://sh.lianjia.com/ershoufang/d76
+gen  http://sh.lianjia.com/ershoufang/d77
+gen  http://sh.lianjia.com/ershoufang/d78
+gen  http://sh.lianjia.com/ershoufang/d79
+gen  http://sh.lianjia.com/ershoufang/d80
+gen  http://sh.lianjia.com/ershoufang/d81
+gen  http://sh.lianjia.com/ershoufang/d82
+gen  http://sh.lianjia.com/ershoufang/d83
+gen  http://sh.lianjia.com/ershoufang/d84
+gen  http://sh.lianjia.com/ershoufang/d85
+gen  http://sh.lianjia.com/ershoufang/d86
+gen  http://sh.lianjia.com/ershoufang/d87
+gen  http://sh.lianjia.com/ershoufang/d88
+gen  http://sh.lianjia.com/ershoufang/d89
+gen  http://sh.lianjia.com/ershoufang/d90
+gen  http://sh.lianjia.com/ershoufang/d91
+gen  http://sh.lianjia.com/ershoufang/d92
+gen  http://sh.lianjia.com/ershoufang/d93
+gen  http://sh.lianjia.com/ershoufang/d94
+gen  http://sh.lianjia.com/ershoufang/d95
+gen  http://sh.lianjia.com/ershoufang/d96
+gen  http://sh.lianjia.com/ershoufang/d97
+gen  http://sh.lianjia.com/ershoufang/d98
+gen  http://sh.lianjia.com/ershoufang/d99
+gen  http://sh.lianjia.com/ershoufang/d100
+2017-07-05 22:53:49 fetch_lianjia.py INFO  开始抓取...
+Wed Jul  5 22:59:19 CST 2017
+Wed Jul  5 23:03:17 CST 2017
+Wed Jul  5 23:03:41 CST 2017

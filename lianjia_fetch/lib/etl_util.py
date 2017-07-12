@@ -2,12 +2,16 @@
 import csv
 import re
 import json
+import os
 import logging
 from logging.config import fileConfig
 import pandas as pd
 from datetime import date
 
-fileConfig("log_util/log_conf.ini")
+dir_name = os.path.abspath( os.path.dirname( __file__) + "/../"  )
+conf_path =  os.path.join( dir_name, "log_util/log_conf.ini")
+print conf_path
+fileConfig(conf_path)
 logger = logging.getLogger("logUtil")
 
 

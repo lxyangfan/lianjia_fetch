@@ -1,0 +1,719 @@
+
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-06 17:56:02 fetch_lianjia.py INFO  开始抓取...
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+Consumer-1: Exiting
+2017-07-06 17:56:10 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+Consumer-2: Exiting
+2017-07-06 17:56:10 fetch_lianjia.py INFO  结束保存文件...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-06 17:57:02 fetch_lianjia.py INFO  开始抓取...
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+Consumer-2: Exiting
+2017-07-06 17:57:09 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+Consumer-1: Exiting
+2017-07-06 17:57:09 fetch_lianjia.py INFO  结束保存文件...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-06 17:58:02 fetch_lianjia.py INFO  开始抓取...
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+Consumer-2: Exiting
+2017-07-06 17:58:10 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+Consumer-1: Exiting
+2017-07-06 17:58:10 fetch_lianjia.py INFO  结束保存文件...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-06 18:00:02 fetch_lianjia.py INFO  开始抓取...
+2017-07-06 18:01:11 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+fetch url:  http://sh.lianjia.com/ershoufang/d11
+fetch url:  http://sh.lianjia.com/ershoufang/d14
+fetch url:  http://sh.lianjia.com/ershoufang/d16
+fetch url:  http://sh.lianjia.com/ershoufang/d18
+fetch url:  http://sh.lianjia.com/ershoufang/d20
+fetch url:  http://sh.lianjia.com/ershoufang/d22
+fetch url:  http://sh.lianjia.com/ershoufang/d24
+fetch url:  http://sh.lianjia.com/ershoufang/d26
+fetch url:  http://sh.lianjia.com/ershoufang/d28
+fetch url:  http://sh.lianjia.com/ershoufang/d29
+fetch url:  http://sh.lianjia.com/ershoufang/d32
+fetch url:  http://sh.lianjia.com/ershoufang/d34
+fetch url:  http://sh.lianjia.com/ershoufang/d36
+fetch url:  http://sh.lianjia.com/ershoufang/d38
+fetch url:  http://sh.lianjia.com/ershoufang/d40
+fetch url:  http://sh.lianjia.com/ershoufang/d42
+fetch url:  http://sh.lianjia.com/ershoufang/d44
+fetch url:  http://sh.lianjia.com/ershoufang/d46
+fetch url:  http://sh.lianjia.com/ershoufang/d48
+fetch url:  http://sh.lianjia.com/ershoufang/d50
+fetch url:  http://sh.lianjia.com/ershoufang/d52
+fetch url:  http://sh.lianjia.com/ershoufang/d54
+fetch url:  http://sh.lianjia.com/ershoufang/d56
+fetch url:  http://sh.lianjia.com/ershoufang/d58
+fetch url:  http://sh.lianjia.com/ershoufang/d60
+fetch url:  http://sh.lianjia.com/ershoufang/d62
+fetch url:  http://sh.lianjia.com/ershoufang/d64
+fetch url:  http://sh.lianjia.com/ershoufang/d66
+fetch url:  http://sh.lianjia.com/ershoufang/d68
+fetch url:  http://sh.lianjia.com/ershoufang/d70
+fetch url:  http://sh.lianjia.com/ershoufang/d72
+fetch url:  http://sh.lianjia.com/ershoufang/d74
+fetch url:  http://sh.lianjia.com/ershoufang/d76
+fetch url:  http://sh.lianjia.com/ershoufang/d78
+fetch url:  http://sh.lianjia.com/ershoufang/d80
+fetch url:  http://sh.lianjia.com/ershoufang/d82
+fetch url:  http://sh.lianjia.com/ershoufang/d84
+fetch url:  http://sh.lianjia.com/ershoufang/d86
+fetch url:  http://sh.lianjia.com/ershoufang/d88
+fetch url:  http://sh.lianjia.com/ershoufang/d90
+fetch url:  http://sh.lianjia.com/ershoufang/d92
+fetch url:  http://sh.lianjia.com/ershoufang/d94
+fetch url:  http://sh.lianjia.com/ershoufang/d95
+fetch url:  http://sh.lianjia.com/ershoufang/d98
+fetch url:  http://sh.lianjia.com/ershoufang/d100
+Consumer-2: Exiting
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+fetch url:  http://sh.lianjia.com/ershoufang/d12
+fetch url:  http://sh.lianjia.com/ershoufang/d13
+fetch url:  http://sh.lianjia.com/ershoufang/d15
+fetch url:  http://sh.lianjia.com/ershoufang/d17
+fetch url:  http://sh.lianjia.com/ershoufang/d19
+fetch url:  http://sh.lianjia.com/ershoufang/d21
+fetch url:  http://sh.lianjia.com/ershoufang/d23
+fetch url:  http://sh.lianjia.com/ershoufang/d25
+fetch url:  http://sh.lianjia.com/ershoufang/d27
+fetch url:  http://sh.lianjia.com/ershoufang/d30
+fetch url:  http://sh.lianjia.com/ershoufang/d31
+fetch url:  http://sh.lianjia.com/ershoufang/d33
+fetch url:  http://sh.lianjia.com/ershoufang/d35
+fetch url:  http://sh.lianjia.com/ershoufang/d37
+fetch url:  http://sh.lianjia.com/ershoufang/d39
+fetch url:  http://sh.lianjia.com/ershoufang/d41
+fetch url:  http://sh.lianjia.com/ershoufang/d43
+fetch url:  http://sh.lianjia.com/ershoufang/d45
+fetch url:  http://sh.lianjia.com/ershoufang/d47
+fetch url:  http://sh.lianjia.com/ershoufang/d49
+fetch url:  http://sh.lianjia.com/ershoufang/d51
+fetch url:  http://sh.lianjia.com/ershoufang/d53
+fetch url:  http://sh.lianjia.com/ershoufang/d55
+fetch url:  http://sh.lianjia.com/ershoufang/d57
+fetch url:  http://sh.lianjia.com/ershoufang/d59
+fetch url:  http://sh.lianjia.com/ershoufang/d61
+fetch url:  http://sh.lianjia.com/ershoufang/d63
+fetch url:  http://sh.lianjia.com/ershoufang/d65
+fetch url:  http://sh.lianjia.com/ershoufang/d67
+fetch url:  http://sh.lianjia.com/ershoufang/d69
+fetch url:  http://sh.lianjia.com/ershoufang/d71
+fetch url:  http://sh.lianjia.com/ershoufang/d73
+fetch url:  http://sh.lianjia.com/ershoufang/d75
+fetch url:  http://sh.lianjia.com/ershoufang/d77
+fetch url:  http://sh.lianjia.com/ershoufang/d79
+fetch url:  http://sh.lianjia.com/ershoufang/d81
+fetch url:  http://sh.lianjia.com/ershoufang/d83
+fetch url:  http://sh.lianjia.com/ershoufang/d85
+fetch url:  http://sh.lianjia.com/ershoufang/d87
+fetch url:  http://sh.lianjia.com/ershoufang/d89
+fetch url:  http://sh.lianjia.com/ershoufang/d91
+fetch url:  http://sh.lianjia.com/ershoufang/d93
+fetch url:  http://sh.lianjia.com/ershoufang/d96
+fetch url:  http://sh.lianjia.com/ershoufang/d97
+fetch url:  http://sh.lianjia.com/ershoufang/d99
+Consumer-1: Exiting
+2017-07-06 18:01:11 fetch_lianjia.py INFO  结束保存文件...
+AWS cron auto fetch and commited...
+AWS cron auto fetch and commited...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-07 18:00:03 fetch_lianjia.py INFO  开始抓取...
+2017-07-07 18:01:13 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+fetch url:  http://sh.lianjia.com/ershoufang/d12
+fetch url:  http://sh.lianjia.com/ershoufang/d14
+fetch url:  http://sh.lianjia.com/ershoufang/d16
+fetch url:  http://sh.lianjia.com/ershoufang/d18
+fetch url:  http://sh.lianjia.com/ershoufang/d20
+fetch url:  http://sh.lianjia.com/ershoufang/d22
+fetch url:  http://sh.lianjia.com/ershoufang/d24
+fetch url:  http://sh.lianjia.com/ershoufang/d26
+fetch url:  http://sh.lianjia.com/ershoufang/d28
+fetch url:  http://sh.lianjia.com/ershoufang/d30
+fetch url:  http://sh.lianjia.com/ershoufang/d32
+fetch url:  http://sh.lianjia.com/ershoufang/d34
+fetch url:  http://sh.lianjia.com/ershoufang/d36
+fetch url:  http://sh.lianjia.com/ershoufang/d37
+fetch url:  http://sh.lianjia.com/ershoufang/d39
+fetch url:  http://sh.lianjia.com/ershoufang/d41
+fetch url:  http://sh.lianjia.com/ershoufang/d43
+fetch url:  http://sh.lianjia.com/ershoufang/d46
+fetch url:  http://sh.lianjia.com/ershoufang/d48
+fetch url:  http://sh.lianjia.com/ershoufang/d50
+fetch url:  http://sh.lianjia.com/ershoufang/d52
+fetch url:  http://sh.lianjia.com/ershoufang/d54
+fetch url:  http://sh.lianjia.com/ershoufang/d56
+fetch url:  http://sh.lianjia.com/ershoufang/d58
+fetch url:  http://sh.lianjia.com/ershoufang/d60
+fetch url:  http://sh.lianjia.com/ershoufang/d62
+fetch url:  http://sh.lianjia.com/ershoufang/d64
+fetch url:  http://sh.lianjia.com/ershoufang/d66
+fetch url:  http://sh.lianjia.com/ershoufang/d68
+fetch url:  http://sh.lianjia.com/ershoufang/d70
+fetch url:  http://sh.lianjia.com/ershoufang/d72
+fetch url:  http://sh.lianjia.com/ershoufang/d74
+fetch url:  http://sh.lianjia.com/ershoufang/d76
+fetch url:  http://sh.lianjia.com/ershoufang/d78
+fetch url:  http://sh.lianjia.com/ershoufang/d80
+fetch url:  http://sh.lianjia.com/ershoufang/d82
+fetch url:  http://sh.lianjia.com/ershoufang/d84
+fetch url:  http://sh.lianjia.com/ershoufang/d86
+fetch url:  http://sh.lianjia.com/ershoufang/d88
+fetch url:  http://sh.lianjia.com/ershoufang/d90
+fetch url:  http://sh.lianjia.com/ershoufang/d91
+fetch url:  http://sh.lianjia.com/ershoufang/d93
+fetch url:  http://sh.lianjia.com/ershoufang/d95
+fetch url:  http://sh.lianjia.com/ershoufang/d98
+fetch url:  http://sh.lianjia.com/ershoufang/d100
+Consumer-2: Exiting
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+fetch url:  http://sh.lianjia.com/ershoufang/d11
+fetch url:  http://sh.lianjia.com/ershoufang/d13
+fetch url:  http://sh.lianjia.com/ershoufang/d15
+fetch url:  http://sh.lianjia.com/ershoufang/d17
+fetch url:  http://sh.lianjia.com/ershoufang/d19
+fetch url:  http://sh.lianjia.com/ershoufang/d21
+fetch url:  http://sh.lianjia.com/ershoufang/d23
+fetch url:  http://sh.lianjia.com/ershoufang/d25
+fetch url:  http://sh.lianjia.com/ershoufang/d27
+fetch url:  http://sh.lianjia.com/ershoufang/d29
+fetch url:  http://sh.lianjia.com/ershoufang/d31
+fetch url:  http://sh.lianjia.com/ershoufang/d33
+fetch url:  http://sh.lianjia.com/ershoufang/d35
+fetch url:  http://sh.lianjia.com/ershoufang/d38
+fetch url:  http://sh.lianjia.com/ershoufang/d40
+fetch url:  http://sh.lianjia.com/ershoufang/d42
+fetch url:  http://sh.lianjia.com/ershoufang/d44
+fetch url:  http://sh.lianjia.com/ershoufang/d45
+fetch url:  http://sh.lianjia.com/ershoufang/d47
+fetch url:  http://sh.lianjia.com/ershoufang/d49
+fetch url:  http://sh.lianjia.com/ershoufang/d51
+fetch url:  http://sh.lianjia.com/ershoufang/d53
+fetch url:  http://sh.lianjia.com/ershoufang/d55
+fetch url:  http://sh.lianjia.com/ershoufang/d57
+fetch url:  http://sh.lianjia.com/ershoufang/d59
+fetch url:  http://sh.lianjia.com/ershoufang/d61
+fetch url:  http://sh.lianjia.com/ershoufang/d63
+fetch url:  http://sh.lianjia.com/ershoufang/d65
+fetch url:  http://sh.lianjia.com/ershoufang/d67
+fetch url:  http://sh.lianjia.com/ershoufang/d69
+fetch url:  http://sh.lianjia.com/ershoufang/d71
+fetch url:  http://sh.lianjia.com/ershoufang/d73
+fetch url:  http://sh.lianjia.com/ershoufang/d75
+fetch url:  http://sh.lianjia.com/ershoufang/d77
+fetch url:  http://sh.lianjia.com/ershoufang/d79
+fetch url:  http://sh.lianjia.com/ershoufang/d81
+fetch url:  http://sh.lianjia.com/ershoufang/d83
+fetch url:  http://sh.lianjia.com/ershoufang/d85
+fetch url:  http://sh.lianjia.com/ershoufang/d87
+fetch url:  http://sh.lianjia.com/ershoufang/d89
+fetch url:  http://sh.lianjia.com/ershoufang/d92
+fetch url:  http://sh.lianjia.com/ershoufang/d94
+fetch url:  http://sh.lianjia.com/ershoufang/d96
+fetch url:  http://sh.lianjia.com/ershoufang/d97
+fetch url:  http://sh.lianjia.com/ershoufang/d99
+Consumer-1: Exiting
+2017-07-07 18:01:13 fetch_lianjia.py INFO  结束保存文件...
+AWS cron auto fetch and commited...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-08 18:00:03 fetch_lianjia.py INFO  开始抓取...
+2017-07-08 18:01:15 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+fetch url:  http://sh.lianjia.com/ershoufang/d12
+fetch url:  http://sh.lianjia.com/ershoufang/d14
+fetch url:  http://sh.lianjia.com/ershoufang/d15
+fetch url:  http://sh.lianjia.com/ershoufang/d17
+fetch url:  http://sh.lianjia.com/ershoufang/d19
+fetch url:  http://sh.lianjia.com/ershoufang/d22
+fetch url:  http://sh.lianjia.com/ershoufang/d24
+fetch url:  http://sh.lianjia.com/ershoufang/d26
+fetch url:  http://sh.lianjia.com/ershoufang/d27
+fetch url:  http://sh.lianjia.com/ershoufang/d30
+fetch url:  http://sh.lianjia.com/ershoufang/d32
+fetch url:  http://sh.lianjia.com/ershoufang/d34
+fetch url:  http://sh.lianjia.com/ershoufang/d36
+fetch url:  http://sh.lianjia.com/ershoufang/d38
+fetch url:  http://sh.lianjia.com/ershoufang/d40
+fetch url:  http://sh.lianjia.com/ershoufang/d42
+fetch url:  http://sh.lianjia.com/ershoufang/d44
+fetch url:  http://sh.lianjia.com/ershoufang/d46
+fetch url:  http://sh.lianjia.com/ershoufang/d48
+fetch url:  http://sh.lianjia.com/ershoufang/d50
+fetch url:  http://sh.lianjia.com/ershoufang/d52
+fetch url:  http://sh.lianjia.com/ershoufang/d54
+fetch url:  http://sh.lianjia.com/ershoufang/d56
+fetch url:  http://sh.lianjia.com/ershoufang/d58
+fetch url:  http://sh.lianjia.com/ershoufang/d60
+fetch url:  http://sh.lianjia.com/ershoufang/d62
+fetch url:  http://sh.lianjia.com/ershoufang/d64
+fetch url:  http://sh.lianjia.com/ershoufang/d66
+fetch url:  http://sh.lianjia.com/ershoufang/d68
+fetch url:  http://sh.lianjia.com/ershoufang/d70
+fetch url:  http://sh.lianjia.com/ershoufang/d72
+fetch url:  http://sh.lianjia.com/ershoufang/d74
+fetch url:  http://sh.lianjia.com/ershoufang/d76
+fetch url:  http://sh.lianjia.com/ershoufang/d78
+fetch url:  http://sh.lianjia.com/ershoufang/d80
+fetch url:  http://sh.lianjia.com/ershoufang/d82
+fetch url:  http://sh.lianjia.com/ershoufang/d84
+fetch url:  http://sh.lianjia.com/ershoufang/d86
+fetch url:  http://sh.lianjia.com/ershoufang/d88
+fetch url:  http://sh.lianjia.com/ershoufang/d91
+fetch url:  http://sh.lianjia.com/ershoufang/d92
+fetch url:  http://sh.lianjia.com/ershoufang/d94
+fetch url:  http://sh.lianjia.com/ershoufang/d96
+fetch url:  http://sh.lianjia.com/ershoufang/d98
+fetch url:  http://sh.lianjia.com/ershoufang/d100
+Consumer-2: Exiting
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+fetch url:  http://sh.lianjia.com/ershoufang/d11
+fetch url:  http://sh.lianjia.com/ershoufang/d13
+fetch url:  http://sh.lianjia.com/ershoufang/d16
+fetch url:  http://sh.lianjia.com/ershoufang/d18
+fetch url:  http://sh.lianjia.com/ershoufang/d20
+fetch url:  http://sh.lianjia.com/ershoufang/d21
+fetch url:  http://sh.lianjia.com/ershoufang/d23
+fetch url:  http://sh.lianjia.com/ershoufang/d25
+fetch url:  http://sh.lianjia.com/ershoufang/d28
+fetch url:  http://sh.lianjia.com/ershoufang/d29
+fetch url:  http://sh.lianjia.com/ershoufang/d31
+fetch url:  http://sh.lianjia.com/ershoufang/d33
+fetch url:  http://sh.lianjia.com/ershoufang/d35
+fetch url:  http://sh.lianjia.com/ershoufang/d37
+fetch url:  http://sh.lianjia.com/ershoufang/d39
+fetch url:  http://sh.lianjia.com/ershoufang/d41
+fetch url:  http://sh.lianjia.com/ershoufang/d43
+fetch url:  http://sh.lianjia.com/ershoufang/d45
+fetch url:  http://sh.lianjia.com/ershoufang/d47
+fetch url:  http://sh.lianjia.com/ershoufang/d49
+fetch url:  http://sh.lianjia.com/ershoufang/d51
+fetch url:  http://sh.lianjia.com/ershoufang/d53
+fetch url:  http://sh.lianjia.com/ershoufang/d55
+fetch url:  http://sh.lianjia.com/ershoufang/d57
+fetch url:  http://sh.lianjia.com/ershoufang/d59
+fetch url:  http://sh.lianjia.com/ershoufang/d61
+fetch url:  http://sh.lianjia.com/ershoufang/d63
+fetch url:  http://sh.lianjia.com/ershoufang/d65
+fetch url:  http://sh.lianjia.com/ershoufang/d67
+fetch url:  http://sh.lianjia.com/ershoufang/d69
+fetch url:  http://sh.lianjia.com/ershoufang/d71
+fetch url:  http://sh.lianjia.com/ershoufang/d73
+fetch url:  http://sh.lianjia.com/ershoufang/d75
+fetch url:  http://sh.lianjia.com/ershoufang/d77
+fetch url:  http://sh.lianjia.com/ershoufang/d79
+fetch url:  http://sh.lianjia.com/ershoufang/d81
+fetch url:  http://sh.lianjia.com/ershoufang/d83
+fetch url:  http://sh.lianjia.com/ershoufang/d85
+fetch url:  http://sh.lianjia.com/ershoufang/d87
+fetch url:  http://sh.lianjia.com/ershoufang/d89
+fetch url:  http://sh.lianjia.com/ershoufang/d90
+fetch url:  http://sh.lianjia.com/ershoufang/d93
+fetch url:  http://sh.lianjia.com/ershoufang/d95
+fetch url:  http://sh.lianjia.com/ershoufang/d97
+fetch url:  http://sh.lianjia.com/ershoufang/d99
+Consumer-1: Exiting
+2017-07-08 18:01:15 fetch_lianjia.py INFO  结束保存文件...
+AWS cron auto fetch and commited...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-09 18:00:03 fetch_lianjia.py INFO  开始抓取...
+2017-07-09 18:01:09 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+fetch url:  http://sh.lianjia.com/ershoufang/d12
+fetch url:  http://sh.lianjia.com/ershoufang/d14
+fetch url:  http://sh.lianjia.com/ershoufang/d15
+fetch url:  http://sh.lianjia.com/ershoufang/d17
+fetch url:  http://sh.lianjia.com/ershoufang/d19
+fetch url:  http://sh.lianjia.com/ershoufang/d22
+fetch url:  http://sh.lianjia.com/ershoufang/d23
+fetch url:  http://sh.lianjia.com/ershoufang/d25
+fetch url:  http://sh.lianjia.com/ershoufang/d27
+fetch url:  http://sh.lianjia.com/ershoufang/d30
+fetch url:  http://sh.lianjia.com/ershoufang/d31
+fetch url:  http://sh.lianjia.com/ershoufang/d33
+fetch url:  http://sh.lianjia.com/ershoufang/d35
+fetch url:  http://sh.lianjia.com/ershoufang/d37
+fetch url:  http://sh.lianjia.com/ershoufang/d39
+fetch url:  http://sh.lianjia.com/ershoufang/d42
+fetch url:  http://sh.lianjia.com/ershoufang/d43
+fetch url:  http://sh.lianjia.com/ershoufang/d44
+fetch url:  http://sh.lianjia.com/ershoufang/d46
+fetch url:  http://sh.lianjia.com/ershoufang/d48
+fetch url:  http://sh.lianjia.com/ershoufang/d50
+fetch url:  http://sh.lianjia.com/ershoufang/d52
+fetch url:  http://sh.lianjia.com/ershoufang/d54
+fetch url:  http://sh.lianjia.com/ershoufang/d56
+fetch url:  http://sh.lianjia.com/ershoufang/d58
+fetch url:  http://sh.lianjia.com/ershoufang/d60
+fetch url:  http://sh.lianjia.com/ershoufang/d62
+fetch url:  http://sh.lianjia.com/ershoufang/d64
+fetch url:  http://sh.lianjia.com/ershoufang/d66
+fetch url:  http://sh.lianjia.com/ershoufang/d68
+fetch url:  http://sh.lianjia.com/ershoufang/d70
+fetch url:  http://sh.lianjia.com/ershoufang/d72
+fetch url:  http://sh.lianjia.com/ershoufang/d74
+fetch url:  http://sh.lianjia.com/ershoufang/d76
+fetch url:  http://sh.lianjia.com/ershoufang/d78
+fetch url:  http://sh.lianjia.com/ershoufang/d80
+fetch url:  http://sh.lianjia.com/ershoufang/d82
+fetch url:  http://sh.lianjia.com/ershoufang/d84
+fetch url:  http://sh.lianjia.com/ershoufang/d86
+fetch url:  http://sh.lianjia.com/ershoufang/d88
+fetch url:  http://sh.lianjia.com/ershoufang/d90
+fetch url:  http://sh.lianjia.com/ershoufang/d92
+fetch url:  http://sh.lianjia.com/ershoufang/d94
+fetch url:  http://sh.lianjia.com/ershoufang/d96
+fetch url:  http://sh.lianjia.com/ershoufang/d98
+fetch url:  http://sh.lianjia.com/ershoufang/d100
+Consumer-2: Exiting
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+fetch url:  http://sh.lianjia.com/ershoufang/d11
+fetch url:  http://sh.lianjia.com/ershoufang/d13
+fetch url:  http://sh.lianjia.com/ershoufang/d16
+fetch url:  http://sh.lianjia.com/ershoufang/d18
+fetch url:  http://sh.lianjia.com/ershoufang/d20
+fetch url:  http://sh.lianjia.com/ershoufang/d21
+fetch url:  http://sh.lianjia.com/ershoufang/d24
+fetch url:  http://sh.lianjia.com/ershoufang/d26
+fetch url:  http://sh.lianjia.com/ershoufang/d28
+fetch url:  http://sh.lianjia.com/ershoufang/d29
+fetch url:  http://sh.lianjia.com/ershoufang/d32
+fetch url:  http://sh.lianjia.com/ershoufang/d34
+fetch url:  http://sh.lianjia.com/ershoufang/d36
+fetch url:  http://sh.lianjia.com/ershoufang/d38
+fetch url:  http://sh.lianjia.com/ershoufang/d40
+fetch url:  http://sh.lianjia.com/ershoufang/d41
+fetch url:  http://sh.lianjia.com/ershoufang/d45
+fetch url:  http://sh.lianjia.com/ershoufang/d47
+fetch url:  http://sh.lianjia.com/ershoufang/d49
+fetch url:  http://sh.lianjia.com/ershoufang/d51
+fetch url:  http://sh.lianjia.com/ershoufang/d53
+fetch url:  http://sh.lianjia.com/ershoufang/d55
+fetch url:  http://sh.lianjia.com/ershoufang/d57
+fetch url:  http://sh.lianjia.com/ershoufang/d59
+fetch url:  http://sh.lianjia.com/ershoufang/d61
+fetch url:  http://sh.lianjia.com/ershoufang/d63
+fetch url:  http://sh.lianjia.com/ershoufang/d65
+fetch url:  http://sh.lianjia.com/ershoufang/d67
+fetch url:  http://sh.lianjia.com/ershoufang/d69
+fetch url:  http://sh.lianjia.com/ershoufang/d71
+fetch url:  http://sh.lianjia.com/ershoufang/d73
+fetch url:  http://sh.lianjia.com/ershoufang/d75
+fetch url:  http://sh.lianjia.com/ershoufang/d77
+fetch url:  http://sh.lianjia.com/ershoufang/d79
+fetch url:  http://sh.lianjia.com/ershoufang/d81
+fetch url:  http://sh.lianjia.com/ershoufang/d83
+fetch url:  http://sh.lianjia.com/ershoufang/d85
+fetch url:  http://sh.lianjia.com/ershoufang/d87
+fetch url:  http://sh.lianjia.com/ershoufang/d89
+fetch url:  http://sh.lianjia.com/ershoufang/d91
+fetch url:  http://sh.lianjia.com/ershoufang/d93
+fetch url:  http://sh.lianjia.com/ershoufang/d95
+fetch url:  http://sh.lianjia.com/ershoufang/d97
+fetch url:  http://sh.lianjia.com/ershoufang/d99
+Consumer-1: Exiting
+2017-07-09 18:01:10 fetch_lianjia.py INFO  结束保存文件...
+AWS cron auto fetch and commited...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-10 18:00:03 fetch_lianjia.py INFO  开始抓取...
+2017-07-10 18:01:14 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+fetch url:  http://sh.lianjia.com/ershoufang/d12
+fetch url:  http://sh.lianjia.com/ershoufang/d14
+fetch url:  http://sh.lianjia.com/ershoufang/d16
+fetch url:  http://sh.lianjia.com/ershoufang/d18
+fetch url:  http://sh.lianjia.com/ershoufang/d20
+fetch url:  http://sh.lianjia.com/ershoufang/d21
+fetch url:  http://sh.lianjia.com/ershoufang/d23
+fetch url:  http://sh.lianjia.com/ershoufang/d25
+fetch url:  http://sh.lianjia.com/ershoufang/d27
+fetch url:  http://sh.lianjia.com/ershoufang/d29
+fetch url:  http://sh.lianjia.com/ershoufang/d31
+fetch url:  http://sh.lianjia.com/ershoufang/d33
+fetch url:  http://sh.lianjia.com/ershoufang/d35
+fetch url:  http://sh.lianjia.com/ershoufang/d37
+fetch url:  http://sh.lianjia.com/ershoufang/d39
+fetch url:  http://sh.lianjia.com/ershoufang/d41
+fetch url:  http://sh.lianjia.com/ershoufang/d43
+fetch url:  http://sh.lianjia.com/ershoufang/d45
+fetch url:  http://sh.lianjia.com/ershoufang/d47
+fetch url:  http://sh.lianjia.com/ershoufang/d49
+fetch url:  http://sh.lianjia.com/ershoufang/d51
+fetch url:  http://sh.lianjia.com/ershoufang/d54
+fetch url:  http://sh.lianjia.com/ershoufang/d56
+fetch url:  http://sh.lianjia.com/ershoufang/d57
+fetch url:  http://sh.lianjia.com/ershoufang/d59
+fetch url:  http://sh.lianjia.com/ershoufang/d61
+fetch url:  http://sh.lianjia.com/ershoufang/d63
+fetch url:  http://sh.lianjia.com/ershoufang/d65
+fetch url:  http://sh.lianjia.com/ershoufang/d67
+fetch url:  http://sh.lianjia.com/ershoufang/d69
+fetch url:  http://sh.lianjia.com/ershoufang/d71
+fetch url:  http://sh.lianjia.com/ershoufang/d73
+fetch url:  http://sh.lianjia.com/ershoufang/d75
+fetch url:  http://sh.lianjia.com/ershoufang/d77
+fetch url:  http://sh.lianjia.com/ershoufang/d79
+fetch url:  http://sh.lianjia.com/ershoufang/d81
+fetch url:  http://sh.lianjia.com/ershoufang/d83
+fetch url:  http://sh.lianjia.com/ershoufang/d85
+fetch url:  http://sh.lianjia.com/ershoufang/d87
+fetch url:  http://sh.lianjia.com/ershoufang/d89
+fetch url:  http://sh.lianjia.com/ershoufang/d91
+fetch url:  http://sh.lianjia.com/ershoufang/d96
+fetch url:  http://sh.lianjia.com/ershoufang/d98
+fetch url:  http://sh.lianjia.com/ershoufang/d100
+Consumer-1: Exiting
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+fetch url:  http://sh.lianjia.com/ershoufang/d11
+fetch url:  http://sh.lianjia.com/ershoufang/d13
+fetch url:  http://sh.lianjia.com/ershoufang/d15
+fetch url:  http://sh.lianjia.com/ershoufang/d17
+fetch url:  http://sh.lianjia.com/ershoufang/d19
+fetch url:  http://sh.lianjia.com/ershoufang/d22
+fetch url:  http://sh.lianjia.com/ershoufang/d24
+fetch url:  http://sh.lianjia.com/ershoufang/d26
+fetch url:  http://sh.lianjia.com/ershoufang/d28
+fetch url:  http://sh.lianjia.com/ershoufang/d30
+fetch url:  http://sh.lianjia.com/ershoufang/d32
+fetch url:  http://sh.lianjia.com/ershoufang/d34
+fetch url:  http://sh.lianjia.com/ershoufang/d36
+fetch url:  http://sh.lianjia.com/ershoufang/d38
+fetch url:  http://sh.lianjia.com/ershoufang/d40
+fetch url:  http://sh.lianjia.com/ershoufang/d42
+fetch url:  http://sh.lianjia.com/ershoufang/d44
+fetch url:  http://sh.lianjia.com/ershoufang/d46
+fetch url:  http://sh.lianjia.com/ershoufang/d48
+fetch url:  http://sh.lianjia.com/ershoufang/d50
+fetch url:  http://sh.lianjia.com/ershoufang/d52
+fetch url:  http://sh.lianjia.com/ershoufang/d53
+fetch url:  http://sh.lianjia.com/ershoufang/d55
+fetch url:  http://sh.lianjia.com/ershoufang/d58
+fetch url:  http://sh.lianjia.com/ershoufang/d60
+fetch url:  http://sh.lianjia.com/ershoufang/d62
+fetch url:  http://sh.lianjia.com/ershoufang/d64
+fetch url:  http://sh.lianjia.com/ershoufang/d66
+fetch url:  http://sh.lianjia.com/ershoufang/d68
+fetch url:  http://sh.lianjia.com/ershoufang/d70
+fetch url:  http://sh.lianjia.com/ershoufang/d72
+fetch url:  http://sh.lianjia.com/ershoufang/d74
+fetch url:  http://sh.lianjia.com/ershoufang/d76
+fetch url:  http://sh.lianjia.com/ershoufang/d78
+fetch url:  http://sh.lianjia.com/ershoufang/d80
+fetch url:  http://sh.lianjia.com/ershoufang/d82
+fetch url:  http://sh.lianjia.com/ershoufang/d84
+fetch url:  http://sh.lianjia.com/ershoufang/d86
+fetch url:  http://sh.lianjia.com/ershoufang/d88
+fetch url:  http://sh.lianjia.com/ershoufang/d90
+fetch url:  http://sh.lianjia.com/ershoufang/d92
+fetch url:  http://sh.lianjia.com/ershoufang/d93
+fetch url:  http://sh.lianjia.com/ershoufang/d94
+fetch url:  http://sh.lianjia.com/ershoufang/d95
+fetch url:  http://sh.lianjia.com/ershoufang/d97
+fetch url:  http://sh.lianjia.com/ershoufang/d99
+Consumer-2: Exiting
+2017-07-10 18:01:14 fetch_lianjia.py INFO  结束保存文件...
+AWS cron auto fetch and commited...
+date
+[INFO] 开始抓取数据...
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+/home/ubuntu/Documents/lianjia_fetch/lianjia_fetch/log_util/log_conf.ini
+2017-07-11 18:00:03 fetch_lianjia.py INFO  开始抓取...
+2017-07-11 18:01:13 fetch_lianjia.py INFO  结束抓取，开始保存...
+fetch url:  http://sh.lianjia.com/ershoufang/d2
+fetch url:  http://sh.lianjia.com/ershoufang/d4
+fetch url:  http://sh.lianjia.com/ershoufang/d9
+fetch url:  http://sh.lianjia.com/ershoufang/d12
+fetch url:  http://sh.lianjia.com/ershoufang/d14
+fetch url:  http://sh.lianjia.com/ershoufang/d16
+fetch url:  http://sh.lianjia.com/ershoufang/d18
+fetch url:  http://sh.lianjia.com/ershoufang/d20
+fetch url:  http://sh.lianjia.com/ershoufang/d21
+fetch url:  http://sh.lianjia.com/ershoufang/d23
+fetch url:  http://sh.lianjia.com/ershoufang/d26
+fetch url:  http://sh.lianjia.com/ershoufang/d27
+fetch url:  http://sh.lianjia.com/ershoufang/d29
+fetch url:  http://sh.lianjia.com/ershoufang/d31
+fetch url:  http://sh.lianjia.com/ershoufang/d33
+fetch url:  http://sh.lianjia.com/ershoufang/d35
+fetch url:  http://sh.lianjia.com/ershoufang/d37
+fetch url:  http://sh.lianjia.com/ershoufang/d39
+fetch url:  http://sh.lianjia.com/ershoufang/d41
+fetch url:  http://sh.lianjia.com/ershoufang/d43
+fetch url:  http://sh.lianjia.com/ershoufang/d45
+fetch url:  http://sh.lianjia.com/ershoufang/d47
+fetch url:  http://sh.lianjia.com/ershoufang/d49
+fetch url:  http://sh.lianjia.com/ershoufang/d51
+fetch url:  http://sh.lianjia.com/ershoufang/d53
+fetch url:  http://sh.lianjia.com/ershoufang/d55
+fetch url:  http://sh.lianjia.com/ershoufang/d57
+fetch url:  http://sh.lianjia.com/ershoufang/d59
+fetch url:  http://sh.lianjia.com/ershoufang/d61
+fetch url:  http://sh.lianjia.com/ershoufang/d63
+fetch url:  http://sh.lianjia.com/ershoufang/d65
+fetch url:  http://sh.lianjia.com/ershoufang/d67
+fetch url:  http://sh.lianjia.com/ershoufang/d69
+fetch url:  http://sh.lianjia.com/ershoufang/d71
+fetch url:  http://sh.lianjia.com/ershoufang/d73
+fetch url:  http://sh.lianjia.com/ershoufang/d75
+fetch url:  http://sh.lianjia.com/ershoufang/d77
+fetch url:  http://sh.lianjia.com/ershoufang/d79
+fetch url:  http://sh.lianjia.com/ershoufang/d81
+fetch url:  http://sh.lianjia.com/ershoufang/d83
+fetch url:  http://sh.lianjia.com/ershoufang/d85
+fetch url:  http://sh.lianjia.com/ershoufang/d87
+fetch url:  http://sh.lianjia.com/ershoufang/d89
+fetch url:  http://sh.lianjia.com/ershoufang/d91
+fetch url:  http://sh.lianjia.com/ershoufang/d93
+fetch url:  http://sh.lianjia.com/ershoufang/d95
+fetch url:  http://sh.lianjia.com/ershoufang/d97
+fetch url:  http://sh.lianjia.com/ershoufang/d99
+Consumer-2: Exiting
+fetch url:  http://sh.lianjia.com/ershoufang/d1
+fetch url:  http://sh.lianjia.com/ershoufang/d3
+fetch url:  http://sh.lianjia.com/ershoufang/d5
+fetch url:  http://sh.lianjia.com/ershoufang/d6
+fetch url:  http://sh.lianjia.com/ershoufang/d7
+fetch url:  http://sh.lianjia.com/ershoufang/d8
+fetch url:  http://sh.lianjia.com/ershoufang/d10
+fetch url:  http://sh.lianjia.com/ershoufang/d11
+fetch url:  http://sh.lianjia.com/ershoufang/d13
+fetch url:  http://sh.lianjia.com/ershoufang/d15
+fetch url:  http://sh.lianjia.com/ershoufang/d17
+fetch url:  http://sh.lianjia.com/ershoufang/d19
+fetch url:  http://sh.lianjia.com/ershoufang/d22
+fetch url:  http://sh.lianjia.com/ershoufang/d24
+fetch url:  http://sh.lianjia.com/ershoufang/d25
+fetch url:  http://sh.lianjia.com/ershoufang/d28
+fetch url:  http://sh.lianjia.com/ershoufang/d30
+fetch url:  http://sh.lianjia.com/ershoufang/d32
+fetch url:  http://sh.lianjia.com/ershoufang/d34
+fetch url:  http://sh.lianjia.com/ershoufang/d36
+fetch url:  http://sh.lianjia.com/ershoufang/d38
+fetch url:  http://sh.lianjia.com/ershoufang/d40
+fetch url:  http://sh.lianjia.com/ershoufang/d42
+fetch url:  http://sh.lianjia.com/ershoufang/d44
+fetch url:  http://sh.lianjia.com/ershoufang/d46
+fetch url:  http://sh.lianjia.com/ershoufang/d48
+fetch url:  http://sh.lianjia.com/ershoufang/d50
+fetch url:  http://sh.lianjia.com/ershoufang/d52
+fetch url:  http://sh.lianjia.com/ershoufang/d54
+fetch url:  http://sh.lianjia.com/ershoufang/d56
+fetch url:  http://sh.lianjia.com/ershoufang/d58
+fetch url:  http://sh.lianjia.com/ershoufang/d60
+fetch url:  http://sh.lianjia.com/ershoufang/d62
+fetch url:  http://sh.lianjia.com/ershoufang/d64
+fetch url:  http://sh.lianjia.com/ershoufang/d66
+fetch url:  http://sh.lianjia.com/ershoufang/d68
+fetch url:  http://sh.lianjia.com/ershoufang/d70
+fetch url:  http://sh.lianjia.com/ershoufang/d72
+fetch url:  http://sh.lianjia.com/ershoufang/d74
+fetch url:  http://sh.lianjia.com/ershoufang/d76
+fetch url:  http://sh.lianjia.com/ershoufang/d78
+fetch url:  http://sh.lianjia.com/ershoufang/d80
+fetch url:  http://sh.lianjia.com/ershoufang/d82
+fetch url:  http://sh.lianjia.com/ershoufang/d84
+fetch url:  http://sh.lianjia.com/ershoufang/d86
+fetch url:  http://sh.lianjia.com/ershoufang/d88
+fetch url:  http://sh.lianjia.com/ershoufang/d90
+fetch url:  http://sh.lianjia.com/ershoufang/d92
+fetch url:  http://sh.lianjia.com/ershoufang/d94
+fetch url:  http://sh.lianjia.com/ershoufang/d96
+fetch url:  http://sh.lianjia.com/ershoufang/d98
+fetch url:  http://sh.lianjia.com/ershoufang/d100
+Consumer-1: Exiting
+2017-07-11 18:01:13 fetch_lianjia.py INFO  结束保存文件...
+AWS cron auto fetch and commited...
